@@ -1,6 +1,3 @@
-#https://www6.software.ibm.com/developerworks/education/l-rubysocks/l-rubysocks-a4.pdf
-#https://ruby-doc.org/stdlib-2.5.1/libdoc/singleton/rdoc/Singleton.html
-
 require_relative "./server"
 require_relative "./loader"
 
@@ -25,11 +22,3 @@ app.get("/home", lambda { |writer, request|
 })
 
 app.start()
-
-de = "<html><head><title>Example</title></head><body><p>Worked!!!</p></body></html>"
-ss = load_html("/public/temp.html")
-puts ss == de
-puts ss.inspect
-puts de
-puts ss.valid_encoding?
-# puts rb.de
