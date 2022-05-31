@@ -1,4 +1,4 @@
-```
+```ruby
 app = Server.new
 
 app.get("/", lambda { |writer, request| 
